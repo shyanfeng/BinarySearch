@@ -4,7 +4,6 @@
 int binarySearch(int target, int array[], int startIndex, int endIndex){
 	int midPoint;
 	midPoint = ((endIndex - startIndex)/ 2) + startIndex;
-	printf("%d\n", array[midPoint]);
 	
 	if(target < array[midPoint]){
 		if(endIndex == midPoint && target != array[midPoint]){
@@ -23,7 +22,5 @@ int binarySearch(int target, int array[], int startIndex, int endIndex){
 	}else if(target == array[midPoint]){
 		return midPoint;
 	}
-	
-
 
 }
